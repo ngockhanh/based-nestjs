@@ -1,0 +1,27 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "^src/(.*)$": "<rootDir>/src/$1",
+    "^test/(.*)$": "<rootDir>/test/$1"
+  },
+  "testRegex": ".*\\.spec\\.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": [
+      "ts-jest",
+      {
+        "isolatedModules": true,
+        "tsconfig": { "allowJs": true }
+      }
+    ]
+  },
+  "runtime": "@side/jest-runtime",
+  "clearMocks": true,
+  "collectCoverageFrom": ["src/**/*.{js,jsx,tsx,ts}", "!**/node_modules/**", "!**/vendor/**"],
+  "coverageDirectory": "../coverage",
+  "testEnvironment": "node",
+  "coverageReporters": ["json", "lcov"],
+  "setupFilesAfterEnv": ["<rootDir>/test/setup.ts"],
+  "transformIgnorePatterns": ["<rootDir>/node_modules/(?!p-timeout)"],
+  "modulePathIgnorePatterns": ["<rootDir>/dist"]
+}
