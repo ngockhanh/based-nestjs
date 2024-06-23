@@ -37,7 +37,6 @@ export default () => {
     clientHost: CLIENT_HOST,
     whitelistOrigins: origins,
     appOptions: {},
-    userGroupId: process.env.USER_GROUP_ID,
     bodyParser: {
       maxLimit: 1000 * 1000 * 10, // 10mb
       defaultLimit: 1000 * 200, // 200kb

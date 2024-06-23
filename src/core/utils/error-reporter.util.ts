@@ -23,7 +23,7 @@ export class ErrorReporterUtil {
     if (this.isActive()) {
       Sentry.captureException(exception, {
         tags: {
-          app: 'INP Backend',
+          app: 'Backend',
           status: tags?.status || HttpStatus.INTERNAL_SERVER_ERROR,
           url: tags?.url ? UrlUtil.getPathName(tags.url) : '',
         },

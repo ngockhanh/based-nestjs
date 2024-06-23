@@ -28,6 +28,7 @@
     "@nestjs/passport": "^10.0.3",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.3.1",
+    "@nestjs/typeorm": "^10.0.2",
     "@opentelemetry/instrumentation-express": "^0.40.1",
     "@opentelemetry/instrumentation-http": "^0.52.1",
     "@opentelemetry/instrumentation-nestjs-core": "^0.38.0",
@@ -37,6 +38,7 @@
     "@opentelemetry/sdk-node": "^0.52.1",
     "@opentelemetry/sdk-trace-base": "^1.25.1",
     "@opentelemetry/semantic-conventions": "^1.25.1",
+    "@sentry/node": "^8.11.0",
     "axios": "^1.7.2",
     "cache-manager": "^5.6.1",
     "cache-manager-redis-store": "^3.0.1",
@@ -47,6 +49,7 @@
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.20",
+    "typeorm-naming-strategies": "^4.1.0",
     "typeorm-transactional": "^0.5.0"
   },
   "devDependencies": {
